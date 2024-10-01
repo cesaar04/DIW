@@ -148,3 +148,8 @@ div {
 #publicidad{
     background-color: #FFF6CD;
 }
+#cabecera h1{
+    background: url(logo.gif);
+    background-position: center;
+    background-size: 75%;
+}
