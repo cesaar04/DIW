@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: red;
+}
+a:visited{
+    color:#800000;
+}
+a:hover{
+    background-color: yellow;
+}
+
+.transition{
+    width: 150px;
+    height: 70px;
+    background-color: #ddd;
+    margin: 5px;
+}
+div:hover{
+    width: 300px;
+    height: 140px;
+    background-color: orange;
+}
+.Ease{
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    -ms-transition: all 3s ease;
+    -o-transition: all 3s ease;
+    transition: all 3s ease;
+}
+.Linear{
+    -webkit-transition: all 3s linear;
+    -moz-transition: all 3s linear;
+    -ms-transition: all 3s linear;
+    -o-transition: all 3s linear;
+    transition: all 3s linear;
+}
+.Ease-In{
+    -webkit-transition: all 3s ease-in;
+    -moz-transition: all 3s ease-in;
+    -ms-transition: all 3s ease-in;
+    -o-transition: all 3s ease-in;
+    transition: all 3s ease-in;
+}
+.Ease-Out{
+    -webkit-transition: all 3s ease-out;
+    -moz-transition: all 3s ease-out;
+    -ms-transition: all 3s ease-out;
+    -o-transition: all 3s ease-out;
+    transition: all 3s ease-out;
+}
+.Ease-In-Out{
+    -webkit-transition: all 3s ease-in-out;
+    -moz-transition: all 3s ease-in-out;
+    -ms-transition: all 3s ease-in-out;
+    -o-transition: all 3s ease-in-out;
+    transition: all 3s ease-in-out;
+}
+
+.navigation {
+    width: 200px; 
+    background-color: rgb(73, 73, 73)
+}
+
+.mainmenu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mainmenu li {
+    margin: 10px 0;
+}
+
+.mainmenu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+.mainmenu a:hover {
+    background-color: grey; 
+}
+.submenu{
+    list-style: none;
+    display: none;
+    background-color: rgb(90, 88, 88);
+    margin: 0;
+}
+.submenu a:hover{
+    background-color: grey;
+}
+.mainmenu li:hover .submenu{
+    display: block;
+}
