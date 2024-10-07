@@ -54,4 +54,10 @@ html {
         display: block;
       }
 }
+section{
+  display: flex;
+}
+article{
+  padding: 1em;
+}
 
