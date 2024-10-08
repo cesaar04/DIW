@@ -2,6 +2,14 @@ html {
     background-color: #c2c5cb;
     margin: 0 105px;
 }
+header{
+  display: flex;
+  align-items: center;
+}
+.centrado {
+  margin-left: 550px;
+  font-size: 50px;
+}
 .navegacion{
     ul {
         list-style-type: none;
