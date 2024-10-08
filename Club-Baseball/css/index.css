@@ -62,7 +62,7 @@ header{
         display: block;
       }
 }
-div{
+.noticias {
   display: flex;
 }
 article{
