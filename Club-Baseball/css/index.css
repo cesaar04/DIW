@@ -1,12 +1,14 @@
 html {
-    background-color: #c2c5cb;
-    margin: 0 105px;
+  background-color: #c2c5cb;
+  margin: 0 105px;
+  font-family: 'Times New Roman', Times, serif;
 }
 header{
   display: flex;
   align-items: center;
 }
 .centrado {
+  font-size: 68px;
   margin-left: 550px;
   font-size: 50px;
 }
@@ -65,15 +67,25 @@ header{
         display: block;
       }
 }
+.banner{
+  width: 100%;
+}
 .noticias {
   display: flex;
 }
 article{
+  margin: 1em;
   padding: 1em;
 }
 .fotosNoticia{
   width: 450px;
   height: 450px;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+article img {
+  display: block;
+  margin: 10px auto;
 }
 
 

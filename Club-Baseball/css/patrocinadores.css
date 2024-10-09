@@ -1,12 +1,14 @@
 html {
-    background-color: #c2c5cb;
-    margin: 0 105px;
+  background-color: #c2c5cb;
+  margin: 0 105px;
+  font-family: 'Times New Roman', Times, serif;
 }
 header{
   display: flex;
   align-items: center;
 }
 .centrado {
+  font-size: 68px;
   margin-left: 550px;
   font-size: 50px;
 }
@@ -65,7 +67,11 @@ header{
         display: block;
       }
 }
+.banner{
+  width: 100%;
+}
 .grid-container {
+  justify-content: center;
   display: grid;
   grid-template-columns: auto auto auto;
 }
@@ -86,8 +92,8 @@ header{
   height: 150px;
 }
 .logoPenaclara{
-  height: 250;
-  height: 150px;
+  width: 375px;
+  height: auto;
 }
 .logoUnicef{
   height: 90px;

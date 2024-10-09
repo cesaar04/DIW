@@ -1,12 +1,14 @@
 html {
-    background-color: #c2c5cb;
-    margin: 0 105px;
+  background-color: #c2c5cb;
+  margin: 0 105px;
+  font-family: 'Times New Roman', Times, serif;
 }
 header{
   display: flex;
   align-items: center;
 }
 .centrado {
+  font-size: 68px;
   margin-left: 550px;
   font-size: 50px;
 }
@@ -65,11 +67,16 @@ header{
         display: block;
       }
 }
+.banner{
+  width: 100%;
+}
 .fotosGaleria{
   height: 220px;
   width: 420px;
+  border-radius: 8px;
 }
 .grid-container {
   display: grid;
+  justify-content: center;
   grid-template-columns: auto auto auto;
 }
