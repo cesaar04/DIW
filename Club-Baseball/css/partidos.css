@@ -10,6 +10,9 @@ header{
   margin-left: 550px;
   font-size: 50px;
 }
+.logo{
+  width: 110px;
+}
 .navegacion{
     ul {
         list-style-type: none;

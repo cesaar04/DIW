@@ -10,6 +10,9 @@ header{
   margin-left: 550px;
   font-size: 50px;
 }
+.logo{
+  width: 110px;
+}
 .navegacion{
     ul {
         list-style-type: none;
@@ -61,6 +64,10 @@ header{
       .dropdown:hover .dropdown-content {
         display: block;
       }
+}
+.fotosGaleria{
+  height: 220px;
+  width: 420px;
 }
 .grid-container {
   display: grid;

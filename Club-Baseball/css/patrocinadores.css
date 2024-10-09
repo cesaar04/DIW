@@ -10,6 +10,9 @@ header{
   margin-left: 550px;
   font-size: 50px;
 }
+.logo{
+  width: 110px;
+}
 .navegacion{
     ul {
         list-style-type: none;
@@ -66,4 +69,39 @@ header{
   display: grid;
   grid-template-columns: auto auto auto;
 }
-
+.logoAdidas{
+  width: 250px;
+  height: 150px;
+}
+.logoSantander{
+  width: 250px;
+  height: 250px;
+}
+.logoDKV{
+  width: 250px;
+  height: 150px;
+}
+.logoMercedes{
+  width: 250px;
+  height: 150px;
+}
+.logoPenaclara{
+  height: 250;
+  height: 150px;
+}
+.logoUnicef{
+  height: 90px;
+}
+.logoUnir{
+  width: 250px;
+  height: 150px;
+}
+.logoUr{
+  height: 100px;
+}
+.logoMartinezdeQuel{
+  height: 60px;
+}
+.logoSantosOchoa{
+  height: 60px;
+}
