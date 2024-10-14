@@ -1,0 +1,44 @@
+.lista1 {
+    list-style-type: circle;
+}
+.lista2 {
+    list-style-type: square;
+}
+.lista3 {
+    list-style-type: decimal;
+}
+.image1 {
+    list-style-image: url(https://media.giphy.com/media/tBik70kZOJKOk/giphy.gif);
+}
+.image2 {
+    list-style-image: url(https://i.pinimg.com/originals/7f/33/5f/7f335f6a84c932db2e63668b20edafef.gif);
+    margin-left: 500px;
+}
+.position {
+    list-style: circle;
+    list-style-position: outside;
+}
+.position2 {
+    list-style: square;
+    list-style-position: inside;
+}
+.ejercicio5 {
+    list-style: none;
+}
+.ejercicio5 li::before{
+    content: '👌';
+    margin-right: 10px;
+}
+.ejercicio6{
+    list-style: none;
+}
+.ejercicio6 li::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url(https://i.pinimg.com/originals/7f/33/5f/7f335f6a84c932db2e63668b20edafef.gif);
+    background-size: contain;
+    margin-right: 10px;
+
+}
