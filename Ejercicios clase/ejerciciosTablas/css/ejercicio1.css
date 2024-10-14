@@ -1,0 +1,21 @@
+table,th,tr,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: small;
+}
+img {
+    width: 11px;
+    height: auto;
+}
+tbody tr:nth-child(odd){
+    background-color: rgb(255, 255, 200);
+}
+.azul{
+    background-color: rgb(215, 251, 254);
+    font-weight: bolder;
+    text-align: left;
+}
+th{
+    background-color: rgb(224, 224, 224);
+}
