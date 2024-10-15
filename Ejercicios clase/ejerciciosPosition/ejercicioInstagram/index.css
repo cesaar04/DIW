@@ -1,0 +1,28 @@
+.logoInstagram{
+    width: 60px;
+    height: auto;
+    border-right: 1px solid black;
+    padding-right: 15px;
+    padding-left: 260px;
+}
+.letrasInstagram {
+    width: 150px;
+    color:black;
+    height: auto;
+}
+.lupa {
+    width: 20px;
+    color: #a5a7aa;
+    position: relative;
+    margin-left: 450px;
+}
+.busqueda {
+    color: #a5a7aa;
+}
+.buscador {
+    margin-left: 20px;
+}
+.cartelera{
+    width: 480px;
+    margin-left: 300px;
+}

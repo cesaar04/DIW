@@ -1,0 +1,25 @@
+.z1 {
+    width: 150px;
+    height: 200px;
+    background-color: purple;
+    position: relative;
+    z-index: 3;
+}
+.z2 {
+    width: 150px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+    left: 50px;
+    top: -110px;
+    z-index: 1;
+}
+.z3{
+    width: 150px;
+    height: 200px;
+    background-color: grey;
+    position: relative;
+    left: 100px;
+    top: -210px;
+    z-index: 2;
+}
