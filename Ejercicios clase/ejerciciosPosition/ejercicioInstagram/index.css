@@ -3,26 +3,38 @@
     height: auto;
     border-right: 1px solid black;
     padding-right: 15px;
-    padding-left: 260px;
+    padding-left: 280px;
 }
 .letrasInstagram {
     width: 150px;
-    color:black;
     height: auto;
+    color:black;
+    margin-left: 15px;
+
 }
 .lupa {
-    width: 20px;
+    width: 18px;
     color: #a5a7aa;
-    position: relative;
+    position: absolute;
+    margin-top: 25px;
     margin-left: 450px;
 }
-.busqueda {
-    color: #a5a7aa;
-}
 .buscador {
-    margin-left: 20px;
+    position: absolute;
+    padding: 5px 30px;
+    margin-top: 20px;
+    margin-left: 505px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 11px;
+    text-align: center;
+    color: #a5a7aa;
 }
 .cartelera{
     width: 480px;
     margin-left: 300px;
+}
+.cabecera{
+    border-bottom: 1px solid rgb(236, 236, 236);
+    padding: 15px;
 }
