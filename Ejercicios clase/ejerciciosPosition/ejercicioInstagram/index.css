@@ -1,9 +1,19 @@
+body{
+    background-color: rgb(214, 214, 214);
+    margin: 0;
+    height: 100%;
+}
+.cabecera{
+    border-bottom: 1px solid rgb(236, 236, 236);
+    padding: 10px;
+    background-color: white;
+}
 .logoInstagram{
     width: 60px;
     height: auto;
     border-right: 1px solid black;
     padding-right: 15px;
-    padding-left: 280px;
+    padding-left: 435px;
 }
 .letrasInstagram {
     width: 150px;
@@ -30,11 +40,17 @@
     text-align: center;
     color: #a5a7aa;
 }
-.cartelera{
-    width: 480px;
-    margin-left: 300px;
+.content {
+    width: 840px;
+    height: 500px;
+    margin-left:550px;
+    margin-top: 50px;
+    height: auto;
+    border: 1px solid rgb(194, 194, 194);
 }
-.cabecera{
-    border-bottom: 1px solid rgb(236, 236, 236);
-    padding: 15px;
+.cartelera{
+    width: 465px;
+    height: auto;
+    display: block;
+
 }
