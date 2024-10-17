@@ -49,7 +49,7 @@ body{
     margin-left:550px;
     margin-top: 50px;
     height: auto;
-    border: 1px solid rgb(194, 194, 194);
+    border: 1px solid rgb(225, 225, 225);
 }
 .cartelera{
     width: 465px;
@@ -62,11 +62,11 @@ body{
     width: 30px;
     height: 30px;
     border-radius: 100px;
-    border: 2px solid rgb(219, 1, 172);
     margin-right: 15px;
+    border: 2px solid rgb(219, 1, 172);
 }
 .comentarios{
-    margin-left: 5px;
+    margin-left: 0px;
 }
 .nombreArtista{
     font-weight: bold;
@@ -76,7 +76,8 @@ body{
 }
 .primeraLinea{
     display: inline-flex;
-    border-bottom: 1px solid rgb(194, 194, 194);
+    width: 369px;
+    border-bottom: 1px solid rgb(225, 225, 225);
 }
 .verficado {
     width: 14px;
@@ -130,6 +131,78 @@ span {
     margin-top: 20px;
     width: 35px;
     height: 35px;
+}
+
+.terceraLinea{
+    display: inline-flex;
+    width: 325px;
+    height: 95px;
+}
+
+.fotoPerfil3{
+    margin-top: 55px;
+    margin-left: 8px;
+    width: 34px;
+    height: 34px;
+    border-radius: 100px;
+    margin-right: 15px;
+}
+.gira2 {
+    margin-top: 45px;
+    font-size: 14px;
+}
+.duracion2{
+    margin-left: 60px;
+    margin-top: 0px;
+    margin-bottom: 82px;
+    font-size: 12px;
+    color: #a5a7aa;
+}
+.tercerComentario{
+    display: inline-flex;
+    width: 369px;
+    height: 130px;
+    border-bottom: 1px solid rgb(225, 225, 225);
+}
+.pennultimaLinea{
+    border-bottom: 1px solid rgb(225, 225, 225);
+}
+.corazon{
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+}
+.coment{
+    margin-left: 9px;
+    width: 25px;
+    height: 25px;
+}
+.compartir{
+    margin-left: 9px;
+    width: 25px;
+    height: 25px;
+}
+.guardar{
+    margin-left: 212px;
+    width: 25px;
+    height: 25px;
+}
+.likes{
+    font-size: 14px;
+    margin-left: 16px;
+}
+.fechaPublicacion{
+    margin-left: 16px;
+    font-size: 12px;
+    color: #a5a7aa;
+}
+.ultimaLinea{
+    margin-left: 16px;
+    width: 325px;
+}
+.enlace{
+    text-decoration: none;
 }
 
 
