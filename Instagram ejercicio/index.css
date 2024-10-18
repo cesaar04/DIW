@@ -6,11 +6,15 @@ body{
     margin: 0;
     height: 100%;
 }
+
+/* Parte superior de la página*/
 .cabecera{
     border-bottom: 1px solid rgb(236, 236, 236);
     padding: 10px;
     background-color: white;
 }
+
+/* Logo superior de instagram*/
 .logoInstagram{
     width: 60px;
     height: auto;
@@ -18,6 +22,8 @@ body{
     padding-right: 15px;
     padding-left: 435px;
 }
+
+/* Letra de instagram parte superior de la página*/
 .letrasInstagram {
     width: 150px;
     height: auto;
@@ -25,6 +31,8 @@ body{
     margin-left: 15px;
 
 }
+
+/*Lupa de la parte superior*/
 .lupa {
     width: 18px;
     color: #a5a7aa;
@@ -32,6 +40,8 @@ body{
     margin-top: 25px;
     margin-left: 450px;
 }
+
+/* Input de la parte superior para buscar*/
 .buscador {
     position: absolute;
     padding: 5px 30px;
@@ -43,6 +53,8 @@ body{
     text-align: center;
     color: #a5a7aa;
 }
+
+/*Contenedor que va almacenar el contenedor de la publicacion y la de comentarios */
 .content {
     display: flex;
     width: 833px;
@@ -51,11 +63,20 @@ body{
     height: auto;
     border: 1px solid rgb(225, 225, 225);
 }
+
+/* Clase que modifica el tamaño de la cartelera del conciert*/
 .cartelera{
     width: 465px;
     height: auto;
     display: block;
 }
+
+/* Contenedor que alberga toda la seccion de comentarios */
+.comentarios{
+    margin-left: 0px;
+}
+
+/*Foto de perfil del usuario de la publicacion*/
 .fotoPerfil{
     margin-top: 10px;
     margin-left: 8px;
@@ -65,26 +86,31 @@ body{
     margin-right: 15px;
     border: 2px solid rgb(219, 1, 172);
 }
-.comentarios{
-    margin-left: 0px;
-}
+
+/*Nombre del perfil que sube la página*/
 .nombreArtista{
     font-weight: bold;
     margin-left: 0px;
     font-size: 14px;
     margin-top: 15px;
 }
+
+/* Contenedor que alberga la foto de perfil del artista con el nombre y el verificado*/
 .primeraLinea{
     display: inline-flex;
     width: 369px;
     border-bottom: 1px solid rgb(225, 225, 225);
 }
+
+/* Logo de verificado de la cuenta*/
 .verficado {
     width: 14px;
     height: 14px;
     margin-top: 15px;
     margin-left: 2px;
 }
+
+/* Texto que pone seguir*/
 .seguir{
     color:rgb(43, 160, 219);
     font-weight: bold;
@@ -92,17 +118,23 @@ body{
     font-size: 14px;
     margin-top: 15px;
 }
+
+/* Texto que pone la localizacion de la publicacion*/
 .localizacion{
     font-size: 12px;
     position: absolute;
     margin-left: 58px;
     margin-top: 35px;
 }
+
+/* Contenedor que alberga el comentario de un usuario*/
 .segundaLinea{
     display: inline-flex;
     width: 325px;
     height: 95px;
 }
+
+/*Segunda foto de perfil del usuario de la publicaion*/
 .fotoPerfil2{
     margin-top: 35px;
     margin-left: 8px;
@@ -112,13 +144,19 @@ body{
     border: 2px solid rgb(219, 1, 172);
     margin-right: 15px;
 }
+
+/*Comentario que pone lo de las entradas*/
 .gira {
     margin-top: 25px;
     font-size: 14px;
 }
+
+/*Span para poner el texto en cursiva*/
 span {
     font-weight: bold;
 }
+
+/*Tiempo que pone desde cuanto hace que se ha hecho el comenatario*/
 .duracion{
     margin-left: 60px;
     margin-top: 0px;
@@ -126,6 +164,7 @@ span {
     color: #a5a7aa;
 }
 
+/* Imagen para que se puedan ver mas comentarios*/
 .more{
     margin-left: 155px;
     margin-top: 20px;
@@ -133,12 +172,14 @@ span {
     height: 35px;
 }
 
+/* Contenedor que almacena el comentario de un usuario*/
 .terceraLinea{
     display: inline-flex;
     width: 325px;
     height: 95px;
 }
 
+/* Foto de perfil del usuario que comenta*/
 .fotoPerfil3{
     margin-top: 55px;
     margin-left: 8px;
@@ -147,10 +188,22 @@ span {
     border-radius: 100px;
     margin-right: 15px;
 }
-.gira2 {
+
+/* Comentario del usuario*/
+.comentarioUsuario {
     margin-top: 45px;
     font-size: 14px;
 }
+
+/* Contenedor que va almacenar la duracion del ultimo comentario*/
+.tercerComentario{
+    display: inline-flex;
+    width: 369px;
+    height: 130px;
+    border-bottom: 1px solid rgb(225, 225, 225);
+}
+
+/* Duracion del comentario del usuario*/
 .duracion2{
     margin-left: 60px;
     margin-top: 0px;
@@ -158,52 +211,66 @@ span {
     font-size: 12px;
     color: #a5a7aa;
 }
-.tercerComentario{
-    display: inline-flex;
-    width: 369px;
-    height: 130px;
-    border-bottom: 1px solid rgb(225, 225, 225);
-}
+
+/* Contenedor que alberga lo de like, comentario, compartir y guardar*/
 .pennultimaLinea{
     border-bottom: 1px solid rgb(225, 225, 225);
 }
+
+/* Imagen de los likes */
 .corazon{
     margin-left: 15px;
     margin-top: 10px;
     width: 25px;
     height: 25px;
 }
+
+/* Imagen de los comentarios */
 .coment{
     margin-left: 9px;
     width: 25px;
     height: 25px;
 }
+
+/* Imagen de los compartir */
 .compartir{
     margin-left: 9px;
     width: 25px;
     height: 25px;
 }
+
+/* Imagen de guardar*/
 .guardar{
     margin-left: 212px;
     width: 25px;
     height: 25px;
 }
+
+/* Texto de los likes de la publicacion*/
 .likes{
     font-size: 14px;
     margin-left: 16px;
 }
+
+/* Texto de la fecha de la publicacion*/
 .fechaPublicacion{
     margin-left: 16px;
     font-size: 12px;
     color: #a5a7aa;
 }
+
+/* Contenedor de inicio de sesion*/
 .ultimaLinea{
     margin-left: 16px;
     width: 325px;
 }
+
+/* Enlace para iniciar sesion*/
 .enlace{
     text-decoration: none;
 }
+
+/* Para quitar el subrayado del enlace*/
 .texto{
     color: #a5a7aa;
 }
