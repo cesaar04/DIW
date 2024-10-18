@@ -1,0 +1,24 @@
+html{
+    margin: 0 40px;
+}
+.infoPersonal{
+    width: 25%;
+    height: 800px;
+    float: left;
+    font-style: italic;
+    /* background-color: rgb(255, 0, 0); */
+}
+.cosasCurrriculum{
+    width: 75%;
+    weight: 400px;
+    float: right;
+    font-style: italic;
+    /* background-color: green; */
+}
+.proyecosDIW{
+    width: 75%;
+    height: 400px;
+    float: right;
+    font-style: italic;
+    /* background-color: blue; */
+}
