@@ -1,0 +1,64 @@
+article {
+    background-color: rgb(254, 246, 235);
+    width:350px;
+    height: 100px;
+}
+figure{
+    float: left;
+    align-items: center;
+}
+.datos-productos{
+    float: right;
+}
+figure img{
+    width: 80px;
+    height: 50%;
+}
+.borrar{
+    padding: 2px;
+    margin-left: 115px;
+    margin-right: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.nombre{
+    font-size: 13px;
+    font-weight: bolder;
+}
+.precio{
+    font-size: 10px;
+    color: rgb(141, 140, 140);
+}
+/* .colores{
+    margin-right:;
+} */
+.colores li{
+    width: 20px;
+    display: inline-block;
+    height: 20px;
+    border-radius: 12.5px;
+    margin: 10px 0px 0px 5px;
+}
+.colores li {
+    width: 20px;
+}
+.colores li:nth-child(1){
+    background-color: red;
+    border: 1px solid black;
+}
+.colores li:nth-child(2){
+    background-color: white;
+    border: 1px solid black;
+}
+.colores li:nth-child(3){
+    background-color: green;
+    border: 1px solid black;
+}
+.colores li:nth-child(4){
+    background-color: yellow;
+    border: 1px solid black;
+}
+.colores li:nth-child(5){
+    background-color: black;
+    border: 1px solid black;
+}
