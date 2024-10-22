@@ -3,22 +3,22 @@ html{
 }
 .infoPersonal{
     width: 25%;
-    height: 800px;
+    height: 730px;
     float: left;
     font-style: italic;
-    /* background-color: rgb(255, 0, 0); */
+    background-color: beige;
 }
 .cosasCurrriculum{
     width: 75%;
-    weight: 400px;
+    height: 365px;
     float: right;
     font-style: italic;
-    /* background-color: green; */
+    background-color: rgb(240, 227, 202);
 }
 .proyecosDIW{
     width: 75%;
-    height: 400px;
+    height: 365px;
     float: right;
     font-style: italic;
-    /* background-color: blue; */
+    background-color: rgb(227, 227, 202);
 }
