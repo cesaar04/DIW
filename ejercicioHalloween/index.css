@@ -5,6 +5,7 @@ html {
   font-family: 'Scary Halloween Font';
   src: url(fonts/scary_halloween/Scary\ Halloween\ Font.ttf) format('truetype');
 }
+/* Cabecera de la página*/
 .titulo {
   font-family: 'Scary Halloween Font';
   margin-left: 670px;
@@ -12,30 +13,34 @@ html {
 }
 header {
   display: flex;
-  align-items: center; /* Alinea verticalmente el logo y la barra de navegación */
-  padding: 10px; /*Añade un poco de espacio alrededor*/
+  padding: 10px;
+  background-image: url(https://png.pngtree.com/png-vector/20221014/ourmid/pngtree-halloween-pumpkins-decoration-png-image_6323418.png);
+  background-position: center;
+  background-size: 41%;
 }
 .logo {
   margin-left: 50px;
   width: 80px;
   height: auto;
 }
+/* Barra de navegacion de la página*/
 .navbar {
-  margin-left: 550px;
+  display: flex;
+  justify-content: center;
+  position: sticky; /* Añadido para que sea sticky */
+  top: 0; /* Se queda en la parte superior */
+  background-color: orange; /* Para que tenga un fondo visible */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
   ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 15px;
+    padding: 10px;
     overflow: hidden;
-    background-color: orange;
   }
-  
   li {
-   float: left;
+    float: left;
   }
-  
   li a {
-    display: inline-flex;
     color: black;
     text-align: center;
     padding: 30px 50px;
@@ -45,8 +50,13 @@ header {
     font-family:'Scary Halloween Font' ;
   }
 }
+/* todas las secciones*/
+section{
+  margin: 0 100px;
+}
+/* seccion sobre nosotros*/
 
-/* formato de imagenes*/
+/* seccion de la galeria*/
 .grid-container {
   display: grid;
   justify-content: center;
@@ -55,24 +65,39 @@ header {
 .imagen1{
   width: 400px;
   height: auto;
+  border-radius: 15px;
 }
 .imagen2{
   width: 335px;
   height: auto;
+  border-radius: 15px;
 }
 .imagen3{
   width: 335px;
   height: auto;
+  border-radius: 15px;
 }
 .imagen4{
   width: 400px;
   height: auto;
+  border-radius: 15px;
 }
 .imagen5{
   width: 335px;
   height: auto;
+  border-radius: 15px;
 }
 .imagen6{
   width: 335px;
   height: auto;
+  border-radius: 15px;
+}
+
+/* Seccion del formulario*/
+form {
+  margin: 0 230px;
+}
+/* Footer*/
+footer{
+  margin: 0 100px;
 }

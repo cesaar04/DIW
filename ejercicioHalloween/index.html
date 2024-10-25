@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Taller Calabazas</title>
 </head>
+
 <body>
     <header>
         <div>
@@ -19,12 +21,26 @@
             <li><a href="index.html">Inicio</a></li>
             <li><a href="#sobreNosotros">Sobre Nosotros</a></li>
             <li><a href="#galeria">Galeria</a></li>
-            <li><a href="#servicios">Servicios</a></li>
             <li><a href="#reserva">Reserva</a></li>
         </ul>
     </div>
+    <section id="sobreNosotros">
+        <h2>Informacion sobre nosotros</h2>
+        <div id="infoSobreNosotros">
+            
+        </div>
+        <div id="instalaciones">
+            <h3>Descripción de las instalaciones y ubicación.</h3>
+        </div>
+        <div id="servicios">
+            <h3>Servicios ofrecidos</h3>
+        </div>
+        <div id="precios">
+            <h3>Precios individuales / grupales</h3>
+        </div>
+    </section>
     <section id="Galeria">
-        <h2>Galeía</h2>
+        <h2>Galería</h2>
         <p>Imagenes de la Galeria</p>
         <div class="grid-container">
             <figure><img src="img/1.jpg" alt="" class="imagen1"></figure>
@@ -35,10 +51,56 @@
             <figure><img src="img/6.jpg" alt="" class="imagen6"></figure>
         </div>
     </section>
+    <section id="reserva">
+        <div class="formulario">
+            <form>
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required>
+                    <br>
+                    <label for="primerApellido">Primer Apellido: </label>
+                    <input type="text" id="primerApellido" name="primerApellido"
+                        placeholder="Introduce tu primer apellido" required>
+                    <br>
+                    <label for="segundoApellido">Segundo Apellido: </label>
+                    <input type="text" id="segundoApellido" name="segundoApellido"
+                        placeholder="Introduce tu primer apellido" required>
+                    <br>
+                    <label for="dni">D.N.I: </label>
+                    <input type="text" id="dni" name="dni" placeholder="Introduce tu DNI" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Datos Contacto</legend>
+                    <label for="tlfno">Número de telefono: </label>
+                    <input type="text" id="tlfno" name="tlfno" placeholder="Tu número de télefono">
+                    <br>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="Tu dirección email">
+                </fieldset>
+                <fieldset>
+                    <legend>Datos de la Reserva</legend>
+                    <label for="opcion">Eleccion de actividad: </label><br>
+                    <input type="radio" id="opcion1" name="opcion1"><label for="opcion1">Opción 1</label><br>
+                    <input type="radio" id="opcion2" name="opcion2"><label for="opcion2">Opción 2</label><br>
+                    <input type="radio" id="opcion3" name="opcion3"><label for="opcion3">Opción 3</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Comentarios / Sugerencias / Preguntas</legend>
+                    <label for="comentarios"></label>
+                    <textarea name="comentarios" id="comentarios" rows="10" cols="80"
+                        placeholder="Introduce los comentarios, tus sugerencias o tus preguntas."></textarea>
+                </fieldset>
+                <input type="reset" value="Resetear">
+                <input type="submit">
+            </form>
+        </div>
+    </section>
     <footer>
         <p>Autor: César Delgado Muro</p>
         <p>&copy; Todos los derechos guardados para César Delgado Muro</p>
         <p>Enlace a la guia de estilos de la página es: <a href="guiaEstilos/guiaEstilos.html">Guia de estilos</a></p>
     </footer>
 </body>
+
 </html>
