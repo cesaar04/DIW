@@ -8,7 +8,7 @@ html {
 /* Cabecera de la página*/
 .titulo {
   font-family: 'Scary Halloween Font';
-  margin-left: 670px;
+  margin-left: 660px;
   color: black;
 }
 header {
@@ -54,8 +54,14 @@ header {
 section{
   margin: 0 100px;
 }
+span {
+  font-weight: bolder;
+}
 /* seccion sobre nosotros*/
-
+#instalaciones img {
+  width: 20px;
+  height: 20px;
+} 
 /* seccion de la galeria*/
 .grid-container {
   display: grid;
@@ -94,8 +100,48 @@ section{
 }
 
 /* Seccion del formulario*/
-form {
-  margin: 0 230px;
+.hacerReserva{
+  display: flex;
+  margin-left: 230px;
+  margin-right: 230px;
+  border: 5px solid black;
+  background-color: rgb(176, 176, 176);
+}
+
+.fotoReserva {
+  width: 600px;
+}
+
+.formulario{
+  margin-top: 25px;
+}
+form select,input{
+  margin-bottom: 10px;
+  padding: 5px;
+}
+form select,input,textarea{
+  border-radius: 10px;
+}
+fieldset{
+  border: none;
+}
+textarea {
+  resize: none;
+}
+.boton{
+  margin-left: 15px;
+}
+.gris {
+  transition: width 0.5s ease, background-color 0.5s ease;
+  width: 180px;
+}
+
+.gris:focus {
+  width: 240px;
+  background-color: rgb(201, 201, 201);
+}
+textarea:focus{
+  background-color: rgb(201, 201, 201);;
 }
 /* Footer*/
 footer{
