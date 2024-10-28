@@ -3,7 +3,6 @@ html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
 }
-
 @font-face {
   font-family: 'Scary Halloween Font';
   src: url(fonts/scary_halloween/Scary\ Halloween\ Font.ttf) format('truetype');
@@ -12,6 +11,7 @@ html {
 h1{
   font-size: 40px;
   font-weight: bold;
+
 }
 
 h2{
@@ -28,7 +28,14 @@ h4{
   font-size: 18px;
   font-weight: bold;
 }
-
+a:link{
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+a:visited {
+  color: #fe00fe;
+}
 /* Cabecera de la página*/
 .titulo {
   font-family: 'Scary Halloween Font';

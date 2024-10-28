@@ -37,15 +37,13 @@
     background-color: #d0021b;
 }
 
-
 /*Paleta de colores*/
-.paletaColores{
+.paletaColores {
     text-align: center;
 }
 .paletaColores img {
     width: 120px;
     height: auto;
-    margin: 10px;
 }
 
 
