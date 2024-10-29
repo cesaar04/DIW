@@ -45,7 +45,13 @@
     width: 120px;
     height: auto;
 }
-
+.colores {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
 
 /* Fuentes utilizadas*/
 .tituloPrincipal{
@@ -72,4 +78,16 @@ span {
 .titulo4 {
     font-size: 18px;
     font-weight: bold;
+}
+
+/* Estilos de enlaces*/
+.noVisitado {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.visitado{
+    font-weight: bold;
+    text-decoration: none;
+    color: #8a2be2;
 }

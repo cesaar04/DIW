@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,21 @@
     <link rel="stylesheet" href="guiaEstilos.css">
     <title>Guia de Estilos</title>
 </head>
+
 <body>
     <div class="principal">
         <div class="paletaColores">
             <h1>Paleta de colores</h1>
-            <img src="../img/gris.svg" alt="Color naranja en hexadecimal">
-            <img src="../img/grisMasClaro.svg" alt="Color negro en hexadecimal">
-            <img src="../img/negro.svg" alt="Color gris claro en hexadecimal">
-            <img src="../img/naranja.svg" alt="Color gris mas claroen hexadecimal">
-
+            <div class="colores">
+                <img src="../img/gris.svg" alt="Color naranja en hexadecimal">
+                <img src="../img/grisMasClaro.svg" alt="Color negro en hexadecimal">
+                <img src="../img/negro.svg" alt="Color gris claro en hexadecimal">
+                <img src="../img/naranja.svg" alt="Color gris mas claro en hexadecimal">
+                <img src="../img/ffffff.svg" alt="Color blanco en hexadecimal">
+                <img src="../img/8a2be2.svg" alt="Color beige en hexadecimal">
+            </div>
         </div>
+
         <div>
             <h1>Fuentes usadas</h1>
             <p class="tituloPrincipal">Fuente cabecera: <span>Scary Halloween Font</span> 40px bold</p>
@@ -25,12 +31,21 @@
             <p class="titulo4">h4 18 px bold</p>
             <p class="textoBody">Body: Arial, Helvetica, sans-serif 14px</p>
         </div>
+
         <div>
             <h1>Estilo de enlaces</h1>
+            <p><a href="" class="noVisitado">Enlace sin visitar</a></p>
+            <p><a href="" class="visitado">Enlace visitado</a></p>
         </div>
+
         <div>
             <h1>Estilo de formulario</h1>
+            <label for="opcion">Eleccion de actividad: </label><br>
+            <input type="radio" id="opcion1" name="opcion" checked><label for="opcion1">Opcion1</label><br>
+            <input type="radio" id="opcion2" name="opcion"><label for="opcion2">Opcion2</label><br>
+            <input type="radio" id="opcion3" name="opcion"><label for="opcion3">Opcion3</label>
         </div>
     </div>
 </body>
+
 </html>

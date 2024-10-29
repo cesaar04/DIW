@@ -34,7 +34,9 @@ a:link{
   color: white;
 }
 a:visited {
-  color: #fe00fe;
+  font-weight: bold;
+  text-decoration: none;
+  color: #8a2be2;
 }
 /* Cabecera de la página*/
 .titulo {
@@ -197,5 +199,8 @@ textarea:focus{
 
 /* Footer*/
 footer{
+  display: grid;
+  grid-template-columns: auto auto auto;
   margin: 0 100px;
+  gap: 10px;
 }
