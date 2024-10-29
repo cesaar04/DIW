@@ -101,7 +101,20 @@ span {
   width: 20px;
   height: 20px;
 }
-
+ol li{
+  list-style: none;
+}
+.emoji::before{
+  content: '⚜️';
+  margin-right: 5px;
+}
+ul li{
+  list-style: none;
+}
+.emoji2::before{
+  content: '🎃';
+  margin-right: 5px;
+}
 /* seccion de la galeria*/
 .grid-container {
   display: grid;
@@ -152,10 +165,12 @@ span {
   margin-right: 230px;
   border: 5px solid black;
   background-color: #b0b0b0;
+  border-radius: 15px;
 }
 
 .fotoReserva {
   width: 600px;
+  border-radius: 15px;
 }
 
 .formulario{
@@ -198,9 +213,25 @@ textarea:focus{
 }
 
 /* Footer*/
-footer{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  margin: 0 100px;
-  gap: 10px;
+footer {
+  margin: 0 105px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.footerIzq {
+  text-align: left;
+  flex: 1;
+}
+
+.footerCentrado {
+  text-align: center;
+  flex: 1;
+}
+
+.footerDrch {
+  text-align: right;
+  flex: 1;
 }

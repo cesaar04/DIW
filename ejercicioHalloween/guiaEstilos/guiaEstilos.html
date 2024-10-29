@@ -23,27 +23,46 @@
             </div>
         </div>
 
-        <div>
+        <div id="fuentesUsadas">
             <h1>Fuentes usadas</h1>
-            <p class="tituloPrincipal">Fuente cabecera: <span>Scary Halloween Font</span> 40px bold</p>
-            <p class="titulo2">h2 28 px bold</p>
-            <p class="titulo3">h3 22 px bold</p>
-            <p class="titulo4">h4 18 px bold</p>
+            <p class="tituloPrincipal">h1 <span>Scary Halloween Font</span> 40px bold</p>
+            <p class="titulo2">h2 28 px bold Arial, Helvetica, sans-serif 14px</p>
+            <p class="titulo3">h3 22 px bold Arial, Helvetica, sans-serif 14px</p>
+            <p class="titulo4">h4 18 px bold Arial, Helvetica, sans-serif 14px</p>
             <p class="textoBody">Body: Arial, Helvetica, sans-serif 14px</p>
         </div>
 
-        <div>
+        <div id="estiloEnlaces">
             <h1>Estilo de enlaces</h1>
             <p><a href="" class="noVisitado">Enlace sin visitar</a></p>
             <p><a href="" class="visitado">Enlace visitado</a></p>
         </div>
 
-        <div>
+        <div id="estioFormulario">
             <h1>Estilo de formulario</h1>
-            <label for="opcion">Eleccion de actividad: </label><br>
-            <input type="radio" id="opcion1" name="opcion" checked><label for="opcion1">Opcion1</label><br>
-            <input type="radio" id="opcion2" name="opcion"><label for="opcion2">Opcion2</label><br>
-            <input type="radio" id="opcion3" name="opcion"><label for="opcion3">Opcion3</label>
+                <div id="input">
+                    <label for="ejemplo">Input normal: </label>
+                    <input type="text" id="ejemplo" name="ejemplo" placeholder="Input normal" required class="sinFocus" maxlength="20" minlength="3">
+                    <br><br>
+                    <label for="ejemplo">Input con focus: </label>
+                    <input type="text" id="ejemplo" name="ejemplo" placeholder="Input con focus" required class="gris" maxlength="20" minlength="3">
+                    
+                </div>
+                <br>
+                <div id="inputRadio">
+                    <label for="opcion">Eleccion de actividad: </label><br>
+                    <input type="radio" id="opcion1" name="opcion" checked><label for="opcion1">Opcion1</label><br>
+                    <input type="radio" id="opcion2" name="opcion"><label for="opcion2">Opcion2</label><br>
+                    <input type="radio" id="opcion3" name="opcion"><label for="opcion3">Opcion3</label>
+                </div>
+                <br>
+                <div id="textarea">
+                    <textarea name="comentarios" id="comentarios" rows="10" cols="30" placeholder="He puesto la propiedad 'resize: none' para que el usuario no pueda modifcar el tamaño"></textarea>
+                </div>
+                <div id="botones">
+                    <input type="reset" value="Resetear" class="boton">
+                </div>
+            
         </div>
     </div>
 </body>
