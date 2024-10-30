@@ -1,24 +1,69 @@
 html{
     margin: 0 40px;
 }
+/* Informacion personal */
 .infoPersonal{
     width: 25%;
     height: 730px;
     float: left;
-    font-style: italic;
     background-color: beige;
 }
-.cosasCurrriculum{
-    width: 75%;
-    height: 365px;
-    float: right;
-    font-style: italic;
-    background-color: rgb(240, 227, 202);
+.infoPersonal h1{
+    margin-left: 15px;
+    font-size: 35px;
 }
+
+.infoPersonal h2,ul, p{
+    margin-left: 15px;
+}
+ul li{
+    list-style: none;
+}
+.email::before {
+ content: '📧';
+ margin-right: 5px;
+}
+
+/* Cosas del curriculum */
+.cosasCurrriculum{
+    width: 74%;
+    height: 360px;
+    float: right;
+    background-color: rgb(240, 227, 202);
+    margin-bottom: 5px;
+}
+
+.cosasCurrriculum h2{
+    margin-left: 15px;
+}
+/* Mis proyectos*/
 .proyecosDIW{
-    width: 75%;
+    width: 74%;
     height: 365px;
     float: right;
-    font-style: italic;
     background-color: rgb(227, 227, 202);
+}
+.proyecosDIW h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    margin-top: 75px;
+    gap: 20px;
+}
+.proyecosDIW img {
+    width: 275px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+.grid-container div:hover img {
+    opacity: 1;
+}
+.grid-container div:hover img {
+    transform: scale(1.1); 
 }
