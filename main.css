@@ -55,7 +55,7 @@ ul li{
     margin-top: 75px;
     gap: 20px;
 }
-.proyecosDIW img {
+.proyecosDIW figure>img {
     width: 275px;
     height: auto;
     border-radius: 5px;
