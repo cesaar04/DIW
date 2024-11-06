@@ -1,0 +1,29 @@
+:root{
+    --fondo-color: red;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(205, 24, 24);
+    width: 100%;
+    padding: 20px;
+    display: inline-flex;
+}
+.logo {
+    margin-left: 275px;
+}
+.lista {
+    margin-left: 825px;
+}
+.lista li {
+    list-style: none;
+    display: inline-flex;
+}
+.account img{
+    width: 25px;
+    display: inline-flex;
+}
