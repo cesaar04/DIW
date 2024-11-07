@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    margin-left: 25px;
+    margin-right: 25px;
+    height: auto;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+#header {
+    background-color: black;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#header a {
+    color: white;
+    text-decoration: none;
+}
+
+#header li {
+    list-style: none;
+}
+
+#logo_text {
+    background-color: rgb(43, 40, 40);
+    border-bottom: 1px solid white;
+}
+
+#logo_text h2{
+    padding-bottom: 20px;
+}
+
+#menubar {
+    background-color: grey;
+}
+
+#menu {
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+}
+
+#menu li {
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: brown;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+}
+
+#banner {
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(paisaje.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 98%;
+    height: 200px;
+    border: 5px solid grey;
+}
+
+#sidebar_container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    float: left;
+}
+
+.sidebar_item {
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 15%;
+    padding-bottom: 20px;
+
+}
+
+.sidebar_item h3,h4,h5,p {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.sidebar_item h3 {
+    margin-top: 10px;
+}
+
+.sidebar_item h4 {
+    margin-top: 10px;
+    text-transform: uppercase;
+
+}
+
+.sidebar_item p {
+    margin-top: 15px;
+}
+
+.sidebar_item li {
+    margin-left: 15px;
+    list-style: none;
+}
+
+.sidebar_item li::before {
+    content: "";/* Necesario para que el pseudo-elemento se muestre */
+    display: inline-block;
+    width: 20px;/* Ancho de la imagen */
+    height: 20px;/* Alto de la imagen */
+    background-image: url("lista.png");/* Imagen personalizada */
+    background-size: contain;/* Ajusta la imagen al tamaño del contenedor */
+    background-repeat: no-repeat;/* Evita que la imagen se repita */
+    margin-right: 10px;/* Espacio entre la imagen y el texto */
+    vertical-align: middle;/* Alinea la imagen con el texto */
+}
+
+#content li {
+    list-style: none;
+}
+
+#content li::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(lista.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+#content {
+    clear: both;
+    width: 85%;
+    height: auto;
+    padding: 10px;
+    float: right;
+}
+#content h1,p,ul {
+  padding: 10px;
+}
+
+#footer {
+  clear: both;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
