@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ejemplos.css">
+    <title>Ejercicios imagemes</title>
+</head>
+<body>
+    <article>
+        <h1>Ejemplo 1</h1>
+        <svg width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1080">
+            <!-- Definir la imagen -->
+            <defs>
+              <pattern id="imgPattern4" patternUnits="userSpaceOnUse" width="1440" height="1080">
+                <image href="imgs/foto.jpg" width="1440" height="1080" />
+              </pattern>
+            </defs>
+          
+            <!-- Crear la máscara que divide la imagen en tres partes con espacios de 150px entre ellas -->
+            <mask id="maskDividida4">
+                <rect x="50" y="50" width="230" height="900" fill="white" rx="20" ry="20"/>
+                <rect x="50" y="50" width="230" height="900" fill="white" rx="20" ry="20"/>
+                <rect x="0" y="0" width="230" height="900" fill="white" rx="30" ry="20"/>
+                <rect x="150" y="150" width="630" height="900" fill="white" rx="20" ry="20"/>
+            </mask>
+          
+            <!-- Aplicar la imagen con la máscara -->
+            <rect x="0" y="0" width="1440" height="1080" fill="url(#imgPattern4)" mask="url(#maskDividida4)" />
+            
+        </svg>
+    </article>
+    <article>
+        <h1>Ejemplo 2</h1>
+    </article>
+    
+</body>
+</html>

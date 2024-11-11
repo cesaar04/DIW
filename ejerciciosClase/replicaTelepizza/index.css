@@ -1,29 +1,31 @@
-:root{
-    --fondo-color: red;
-}
-
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 header{
-    background-color: rgb(205, 24, 24);
-    width: 100%;
+    background-color: red;
     padding: 20px;
-    display: inline-flex;
+}
+#principal {
+    display: flex;
 }
 .logo {
     margin-left: 275px;
+    margin-right: 150px;
 }
-.lista {
-    margin-left: 825px;
+.lista  ul{
+    list-style: none;
+    display: flex;
 }
 .lista li {
-    list-style: none;
-    display: inline-flex;
+    margin-right: 15px;
 }
-.account img{
-    width: 25px;
-    display: inline-flex;
+.lista li a {
+    text-decoration: none;
+    color: white;
+}
+.account  img{
+    width: 20px;
+    height: 20px;
 }
