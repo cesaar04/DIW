@@ -9,23 +9,78 @@ header{
 }
 #principal {
     display: flex;
-}
-.logo {
-    margin-left: 275px;
-    margin-right: 150px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 29%;
+    margin-left: 17%;
 }
 .lista  ul{
     list-style: none;
     display: flex;
-}
-.lista li {
-    margin-right: 15px;
+    gap: 15px;
 }
 .lista li a {
     text-decoration: none;
     color: white;
 }
-.account  img{
+.lista img {
     width: 20px;
     height: 20px;
+}
+.lista li.cesta a{
+    color: red;
+    background-color: white;
+    border-radius: 15px;
+    text-transform: uppercase;
+    padding: 5% 140%;
+}
+.subrayado {
+    text-decoration: underline 2px solid white;
+}
+.navegacion ul {
+    margin: 0 6%;
+    margin-top: 2%;
+    background-color: rgb(236, 236, 236);
+    padding: 15px;
+    border-radius: 30px;
+}
+.navegacion {
+    display: flex;
+    justify-content: center;
+    ul {
+        list-style: none;
+    }
+    li {
+        margin: 0 15px;
+        float: left;
+    }
+}
+.navegacion ul li.ofertas {
+    color: red;
+}
+.navegacion ul li.arcane {
+    color: rgb(99, 99, 223);
+}
+.navegacion ul li.mitelepi {
+    color: rgb(202, 128, 71);
+}
+.navegacion li:hover {
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+}
+.navegacion li.ofertas:hover{
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+}
+.navegacion li.mitelepi:hover{
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+}
+.navegacion li.arcane:hover{
+    color: white;
+    background-color:  rgb(99, 99, 223);
+    border-radius: 5px;
 }

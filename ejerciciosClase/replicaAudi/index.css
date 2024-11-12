@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: black;
+}
+header {
+    background-color: white;
+    padding: 20px;    
+}
+#principal {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+}
+header #logo{
+    margin-left: 4%;
+}
+.logo img {
+    width: 90px;
+    height: auto;
+}
+.barra ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.barra li {
+    margin-left: 20px;
+}
+.barra li a {
+    text-decoration: none;
+    color: rgb(131, 131, 131);
+}
+.barra li a:hover {
+    color: black;
+}
+
+
+
