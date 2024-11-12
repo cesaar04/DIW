@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Video Incrustado</title>
+</head>
+<body>
+    <main>
+        <video autoplay muted loop id="myVideo">
+            <source src="video ej4.mp4" type="video/mp4">
+            <p>Tu navegador no soporta el video</p>
+        </video>
+        <div class="videoTitle" id="videoTitle">
+            ¡FUNCIONAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+        </div>
+        <div class="content">
+            <h2>Titutlo</h2>
+            <p>DESCRIPCION DEL VIDEO</p>
+            <button id="myBtn" onclick="myFunction()">Pause</button>
+            <button id="soundBtn" onclick="soundMute()">
+                <img src="mute.png" alt="" id="soundImg">
+            </button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
