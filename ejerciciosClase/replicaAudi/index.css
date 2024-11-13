@@ -13,10 +13,10 @@ header {
 #principal {
     display: flex;
     align-items: center;
-    margin-left: 5%;
-}
-header #logo{
+    justify-content: start;
+    margin-right: 4%;
     margin-left: 4%;
+    gap: 30px;
 }
 .logo img {
     width: 90px;
@@ -25,10 +25,7 @@ header #logo{
 .barra ul{
     list-style: none;
     display: flex;
-    gap: 10px;
-}
-.barra li {
-    margin-left: 20px;
+    gap: 25px;
 }
 .barra li a {
     text-decoration: none;
@@ -36,6 +33,13 @@ header #logo{
 }
 .barra li a:hover {
     color: black;
+}
+.busqueda img {
+    width: 20px;
+    height: 20px;
+}
+.busqueda{
+  margin-left: auto;
 }
 
 
