@@ -51,12 +51,11 @@ ul li{
 .grid-container {
     display: grid;
     justify-content: center;
-    grid-template-columns: auto auto auto;
-    margin-top: 75px;
-    gap: 20px;
+    grid-template-columns: auto auto auto auto;
+        gap: 20px;
 }
 .proyecosDIW img {
-    width: 275px;
+    width: 200px;
     height: auto;
     border-radius: 5px;
     border: 2px solid black;
