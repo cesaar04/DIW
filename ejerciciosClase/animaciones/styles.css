@@ -1,0 +1,60 @@
+article {
+    display: flex;
+}
+img {
+    width: 100px;
+    height: auto;
+    margin: 20px;
+    display: block;
+}
+
+.division article div {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+/* TRANSLATE */
+.caja-trans {
+    /* transform: translateX(200px); */
+    /* transform: translateY(20px); */
+    transform: translate(200px, 20px);
+}
+.img-trans {
+    /* transform: translateX(200px); */
+    /* transform: translateY(20px); */
+    transform: translate(200px, 10px);  
+}
+
+/* ROTATE 2D */
+.caja-rot2d {
+    transform: rotate(45deg) scale(1.5);
+}
+
+.img-rot2d{
+    transform: rotate(45deg) scale(1.5);  
+}
+
+/* ROTATE 3D */
+.caja-rot3d {
+    transform: rotateX(60deg) rotateY(60deg);
+}
+
+.img-rot3d{
+    transform: rotateZ(60deg) rotateY(60deg); 
+}
+
+/* SKEW 2D */
+.caja-skew {
+    /*transform: skewX(20deg)*/
+    /*transform: skewY(20deg)*/
+    transform: skew(50deg, 20deg);
+}
+
+.img-skew{
+    /*transform: skewX(20deg)*/
+    /*transform: skewY(20deg)*/
+    transform: skew(50deg, 20deg);
+}
