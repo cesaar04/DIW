@@ -1,0 +1,13 @@
+button {
+    color: magenta;
+    transition: color 200ms ease-in 50ms;
+    width: 10vw;
+    height: 10vh;
+    transition: width 1s ease-out 50ms;
+    
+}
+button:hover{
+    color: blueviolet;
+    width: 40vw;
+    transform: width 5s ease-out 1s, color 5s ease-out 1;
+}

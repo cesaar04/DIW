@@ -1,0 +1,75 @@
+body{
+   display: block;
+}
+/*Puzle dos*/
+.original {
+    position: relative;
+    margin: 10vh 10vw;
+}
+
+.p1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    transition: opacity 0.5s;  
+}
+.p1:hover {
+    opacity: 1;
+}
+.p2 {
+    position: absolute;
+    top: 0;
+    left: 220px;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+.p2:hover {
+    opacity: 1;
+}
+.p3 {
+    position: absolute;
+    top: 225px;
+    left: 29.5px;
+    opacity: 0.5;
+    transition: opacity 0.5s;  
+}
+.p3:hover {
+    opacity: 1;
+}
+
+/*Puzle tres*/
+.original2 {
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
+#p1-movida {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100vw);
+    transition: transform 3s linear 1s;
+}
+#p2-movida {
+    position: absolute;
+    top: 0;
+    left: 220px;
+    transform: translateX(100vw);
+    transition: transform 3s linear 1s;
+}
+#p3-movida {
+    position: absolute;
+    top: 225px;
+    left: 29.5px;
+    transform: translateY(100vh);
+    transition: transform 3s linear 1s;
+}
+
+.original2:hover #p1-movida,
+.original2:hover #p2-movida,
+.original2:hover #p3-movida{
+    transform: translateX(0px) translateY(0px);
+}
