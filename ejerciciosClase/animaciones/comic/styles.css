@@ -1,0 +1,64 @@
+* {
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.inferior img {
+    width: 335px;
+    height: auto;
+}
+
+.inferior {
+    display: flex;
+}
+.superior img {
+    width: 275px;
+    height: auto;
+}
+.superior, .inferior {
+    flex-direction: row;
+}
+.arriba img, .abajo img{
+    width: 275px;
+    height: auto;
+}
+
+
+.imagen1 {
+    opacity: 0.1;
+    transition: opacity 2s;
+}
+
+.imagen1:hover {
+    opacity: 1;
+}
+
+.imagen2 {
+    
+}
+
+.imagen2:hover {
+
+}
+
+.imagen3 {
+
+}
+
+.imagen3:hover {
+    
+}
+
+.imagen4 {
+
+}
+
+.imagen4:hover {
+    
+}
