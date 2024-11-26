@@ -7,6 +7,10 @@ html{
     height: 730px;
     float: left;
     background-color: beige;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: auto;
 }
 .infoPersonal h1{
     margin-left: 15px;
@@ -37,32 +41,38 @@ ul li{
     margin-left: 15px;
 }
 /* Mis proyectos*/
-.proyecosDIW{
+.proyecosDIW {
     width: 74%;
     height: 365px;
     float: right;
     background-color: rgb(227, 227, 202);
 }
+
 .proyecosDIW h1 {
     margin-top: 20px;
     text-align: center;
 }
 
 .grid-container {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: auto auto auto auto;
-        gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-.proyecosDIW img {
+
+.grid-container figure {
     width: 200px;
+    margin: 0;
+}
+
+.proyecosDIW img {
+    width: 100%;
     height: auto;
     border-radius: 5px;
     border: 2px solid black;
 }
-.grid-container img:hover{
-    opacity: 1;
-}
+
 .grid-container img:hover {
-    transform: scale(1.1); 
+    opacity: 1;
+    transform: scale(1.1);  
 }
