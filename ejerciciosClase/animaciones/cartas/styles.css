@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 5rem;
+}
+.ficha {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 3rem;
+}
+.cuatro.anverso {
+    background-image: url('img/cuatro.jpg');
+    background-size: 100% 100%;
+}
+.ocho.anverso {
+    background-image: url('img/ocho.jpg');
+    background-size: 100% 100%;
+}
+.rey.anverso.anverso {
+    background-image: url('img/rey.jpg');
+    background-size: 100% 100%;
+}
+
+.anverso {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    z-index: 0;
+    transform: rotateY(-180deg);
+    transition: all 0.5s ease 0.5s;
+    border-radius: 25px;
+}
+
+.reverso {
+    position: absolute;
+    background-image: url('img/reverso.jpg');
+    background-size: 100% 100%;
+    width: 300px;
+    height: 400px;
+    z-index: 1;
+    color: white;
+    transform: rotateY(0deg);
+    transition: all 0.5s ease 0.5s;
+    border-radius: 25px;
+}
+
+.ficha:hover .anverso {
+    z-index: 1; 
+    transform: rotateY(0deg);
+    
+}
+
+.ficha:hover .reverso {
+    z-index: 0;
+    transform: rotateY(180deg);
+    
+}

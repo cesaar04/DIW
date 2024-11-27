@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    }
+}
 .ficha {
     position: relative;
     width: 350px;
