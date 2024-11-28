@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+}
+
+.pokeball {
+    position: relative;
+    margin: 5vh 5vw;
+    width: 700px;
+    height: 700px;
+}
+
+.parteArriba {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.parteAbajo {
+    position: absolute;
+    top: -90px;
+    left: 0;
+    z-index: 0;
+    transition: top 0.5s ease; /* Transición suave para mover la parte inferior */
+}
+
+/* Cuando el ratón pasa sobre la pokebola, mueve la parte inferior hacia arriba */
+.pokeball:hover .parteAbajo {
+    top: 140px; /* Se mueve la parte inferior para crear el hueco */
+}
+/* Nueva imagen que aparecerá al pasar el ratón */
+.nuevaImagen {
+    position: absolute;
+    top: 270px;
+    left: 170px;
+    z-index: 2;
+    width: 150px;
+    height: 150px;
+    opacity: 0; /* Inicialmente está oculta */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transición suave para la aparición */
+}
+
+/* Cuando el ratón pasa sobre la pokebola, hace que la nueva imagen sea visible */
+.pokeball:hover .nuevaImagen {
+    opacity: 1; /* La imagen aparece */
+    transform: rotate(360deg);
+}
