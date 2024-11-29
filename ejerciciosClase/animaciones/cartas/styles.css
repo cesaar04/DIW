@@ -15,50 +15,63 @@ body {
     height: 400px;
     margin: 3rem;
 }
-.cuatro.anverso {
-    background-image: url('img/cuatro.jpg');
-    background-size: 100% 100%;
-}
-.ocho.anverso {
-    background-image: url('img/ocho.jpg');
-    background-size: 100% 100%;
-}
-.rey.anverso.anverso {
-    background-image: url('img/rey.jpg');
-    background-size: 100% 100%;
-}
 
 .anverso {
     position: absolute;
     width: 300px;
     height: 400px;
     z-index: 0;
-    transform: rotateY(-180deg);
-    transition: all 0.5s ease 0.5s;
+    opacity: 0;
+    transform: rotateY(180deg);
+    transition: z-index 0.5s, transform 0.5s;
     border-radius: 25px;
 }
 
 .reverso {
     position: absolute;
-    background-image: url('img/reverso.jpg');
-    background-size: 100% 100%;
     width: 300px;
     height: 400px;
     z-index: 1;
-    color: white;
+    opacity: 0.3;
     transform: rotateY(0deg);
-    transition: all 0.5s ease 0.5s;
+    transition: z-index 0.5s, transform 0.5s;
     border-radius: 25px;
 }
 
-.ficha:hover .anverso {
-    z-index: 1; 
+#cuatro .anverso {
+    background-image: url('img/cuatro.jpg');
+    background-size: 100% 100%;
+}
+
+#ocho .anverso {
+    background-image: url('img/ocho.jpg');
+    background-size: 100% 100%;
+}
+
+#rey .anverso {
+    background-image: url('img/rey.jpg');
+    background-size: 100% 100%;
+}
+
+#cuatro .reverso, 
+#ocho .reverso, 
+#rey .reverso {
+    background-image: url('img/reverso.jpg');
+    background-size: 100% 100%;
+}
+
+.girada .anverso{
+    opacity: 1;
+    z-index: 1;
     transform: rotateY(0deg);
-    
+}
+
+.girada .reverso {
+    opacity: 1;
+    z-index: 0;
+    transform: rotateY(180deg);
 }
 
 .ficha:hover .reverso {
-    z-index: 0;
-    transform: rotateY(180deg);
-    
+    opacity: 1;
 }
