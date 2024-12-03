@@ -1,0 +1,42 @@
+* {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+:root {
+    --fondo-verde: green;
+    --blanco: #FFFFFF;
+}
+
+/*Contenedor padre*/
+.ficha {
+    background-color: var(--fondo-verde);
+    margin-top: 2%;
+    margin-left: 1%;
+    width: 500px;
+    height: 750px;
+    border-radius: 15px;
+    position: relative;
+}
+.ficha::after {
+    content: 'Oferta';
+    font-style: italic;
+    font-size: 195px;
+    opacity: 0.5;
+}
+
+/*Contenedor info*/
+.fruta img{
+    height: auto;
+    width: 400px;
+}
+
+
+/*Contenedor tit*/
+.tit {
+    position: absolute;
+    top: 550px;
+    color: var(--blanco);
+    font-size: 25px;
+}
+

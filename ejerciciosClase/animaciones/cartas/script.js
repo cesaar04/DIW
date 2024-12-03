@@ -3,10 +3,10 @@ var aciertos = 0;
 var fallos = 0;
 var intentos = 0;
 function girarCarta(cartaGirada){
-    if (!cartaGirada.classList.contains('girada')){
-        cartaGirada.classList.add('girada');
+    // if (!cartaGirada.classList.contains('girada')){
+        cartaGirada.classList.toggle('girada');
         setTimeout(comparar,2000,cartaGirada);
-    } 
+    // } 
 }
 
 function comparar(carta2) {
