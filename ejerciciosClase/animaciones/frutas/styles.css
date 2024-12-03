@@ -6,6 +6,7 @@
 :root {
     --fondo-verde: green;
     --blanco: #FFFFFF;
+    --circulo: yellow;
 }
 
 /*Contenedor padre*/
@@ -17,26 +18,143 @@
     height: 750px;
     border-radius: 15px;
     position: relative;
+    overflow: hidden;
+
 }
+
+.ficha > * {
+    position: absolute;
+}
+
+/*Oferta*/
 .ficha::after {
     content: 'Oferta';
+    position: absolute;
     font-style: italic;
-    font-size: 195px;
+    font-size: 200px;
     opacity: 0.5;
+    top: 230px;
+    margin-left: -3%;
+}
+
+/* Circulo */
+.ficha::before {
+    content: "";
+    position: absolute;
+    clip-path: circle(200px at 80% 10%);
+    background-color: var(--circulo);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transition: all 1s ease;
 }
 
 /*Contenedor info*/
-.fruta img{
-    height: auto;
-    width: 400px;
+.info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 550px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    transition: all 1s ease;
 }
 
+.tam, .uni , .precio{
+    width: 100%;
+    display:  flex;
+    flex-direction: row;
+    align-items: center; /*Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    gap: 5%;
+    visibility: hidden;
+}
+    
+.tam span, .unid span, .precio span {
+    border: 3px solid transparent;
+}
+
+/* Marandina imagen*/
+.fruta {
+    z-index: 1;
+    transition: all 1s ease;
+}
+.fruta img{
+    position: absolute;
+    width: 400px;
+    height: auto;
+    top: 150px;
+    left: 50px;
+    transition-delay: 0.5s;
+    transition: all 1s ease;
+}
+.precio span {
+    background-color: var(--circulo);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.info > * {
+    margin-bottom: 25px;
+}
 
 /*Contenedor tit*/
 .tit {
-    position: absolute;
-    top: 550px;
     color: var(--blanco);
     font-size: 25px;
 }
 
+input {
+    width: 40px;
+    height: 20px;
+    padding: 3%;
+    background-color:var(--circulo);
+    border-radius: 5px;
+    border: none;
+}
+
+/*QUITAR LAS FLECHAS*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+.ficha:hover::before {
+    clip-path: circle(400px at 80% -20%);
+}
+.ficha:hover .fruta {
+    transform: translateY(-40px);
+}
+
+.ficha:hover .info {
+    transform: translateY(-80px);
+}
+
+.ficha:hover .tam,
+.ficha:hover .uni,
+.ficha:hover .precio {
+    visibility: visible;
+    opacity: 1;
+}
+
+.ficha:hover .tam {
+    transition-delay: 0.5s;
+}
+
+.ficha:hover .uni {
+    transition-delay: 0.5s;
+}
+
+.ficha:hover .precio {
+    transition-delay: 0.5s;
+}
+
+.tam span:hover {
+    border: 3px solid yellow;
+}
