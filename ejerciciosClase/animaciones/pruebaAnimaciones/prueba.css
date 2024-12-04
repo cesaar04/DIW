@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    margin-bottom: 20px;
+}
+
+.imgarbol{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url(arbolnavidad.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bola1::after{
+    content: '';
+    position: absolute;
+    background-color: #cb0000;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: 80px;
+    top: 45px;
+    border: 1px solid black;
+}
+
+.imgarbol:hover .bola1::after{
+    background-color: #ec0000;
+    box-shadow: 0 0 10px red;
+}
+
+.bola2::after{
+    content: '';
+    position: absolute;
+    background-color: darkblue;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    left: 72px;
+    top: 130px;
+    border: 1px solid black;
+}
+
+.imgarbol:hover .bola2::after{
+    background-color: rgb(40, 40, 255);
+    box-shadow: 0 0 10px blue;
+}
+
+.bola3::after{
+    content: '';
+    position: absolute;
+    background-color: darkorange;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    left: 110px;
+    top: 90px;
+    border: 1px solid black;
+}
+
+.imgarbol:hover .bola3::after{
+    background-color: rgb(255, 183, 48);
+    box-shadow: 0 0 10px orange;
+}
+
+.trineo{
+    width: fit-content;
+}
+
+.trineo img{
+    width: 16rem;
+    height: 16rem;
+
+    /* transition: translateX 5s ease; */
+    transition: transform 10s ease;
+}
+
+.trineoTranslate{
+    transform: translateX(1000px) translateY(-1000px);
+}
+
+.trineobtn{
+    width: fit-content;
+    padding: 5px;
+}
+
+.nieveybola{
+    width: fit-content;
+}
+
+.nieveybola{
+    position: relative;
+}
+
+.nieveybola::after{
+    content: '';
+    position: absolute;
+    background-image: url('bolanieve.png');
+    background-size: cover;
+    background-position: center;
+    width: 30px;
+    height: 30px;
+    top: 300px;
+    left: 10px;
+
+    transition: all 3s;
+}
+
+.nieve{
+    width: 200%;
+}
+
+.nieveybola:hover::after{
+    transform: translate(300px) scale(3) rotateZ(360deg);
+
+}
