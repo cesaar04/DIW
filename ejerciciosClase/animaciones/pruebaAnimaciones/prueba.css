@@ -109,7 +109,7 @@ button{
     top: 300px;
     left: 10px;
 
-    transition: all 3s;
+    transition: all 4s;
 }
 
 .nieve{
@@ -117,6 +117,6 @@ button{
 }
 
 .nieveybola:hover::after{
-    transform: translate(300px) scale(3) rotateZ(360deg);
+    transform: translate(600px) scale(4) rotateZ(360deg);
 
 }
