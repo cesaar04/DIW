@@ -1,3 +1,6 @@
+:root {
+    --espera: 2s;
+}
 @font-face {
     font-family: 'Electrica';
     src: url('fonts/electrical.ttf') format('truetype');
@@ -55,18 +58,50 @@ h1 {
     position: absolute;
     top: 123px;
     left: 413px;
+    animation: encender 1s calc(3s + var(--espera)) backwards;
 }
 .bombilla_ser2 {
     position: absolute;
     top: 210px;
     left: 413px;
+    animation: encender 1s calc(4s + var(--espera)) backwards;
 }
 
 .corriente_ser{
     position: absolute;
     top: 134px;
     left: 185px;
-    animation: mover 10s infinite linear;
+    animation: mover 10s var(--espera) infinite linear,
+    parpadeo 1s infinite linear;
+}
+
+
+
+.bombilla_par1 {
+    position: absolute;
+    top: 135px;
+    left: 925px;
+    animation: encender 1s calc(4.8s + var(--espera)) backwards;
+}
+.bombilla_par2 {
+    position: absolute;
+    top: 135px;
+    left: 1020px;
+    animation: encender 1s calc(4.8s + var(--espera)) backwards;
+}
+.corriente_par1{
+    position: absolute;
+    top: 115px;
+    left: 755px;
+    animation: moverpar1 10s var(--espera) infinite linear,
+    parpadeo 1s infinite linear;
+}
+.corriente_par2{
+    position: absolute;
+    top: 115px;
+    left: 755px;
+    animation: moverpar2 10s var(--espera) infinite linear,
+    parpadeo 1s infinite linear;
 }
 
 @keyframes mover {
@@ -89,4 +124,87 @@ h1 {
         top: 253px;
     }
 
+    72% {
+        top: 253px;
+        left: 185px;
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 0.75;
+        transform: scale(1.25);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scale(0.5);
+    }
+}
+
+
+@keyframes encender {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.75;
+    }
+}
+
+@keyframes moverpar1 {
+    0% {
+        top: 115px;
+        left: 755px;
+    }
+    10% {
+        top: 85px;
+        left: 755px;
+    }
+    40% {
+        top: 85px;
+        left: 925px;
+    }
+    60% {
+        top: 190px;
+        left: 925px;
+    }
+    90% {
+        top: 190px;
+        left: 755px;
+    }
+}
+@keyframes moverpar2 {
+    0% {
+        top: 115px;
+        left: 755px;
+    }
+    10% {
+        top: 85px;
+        left: 755px;
+    }
+    40% {
+        top: 85px;
+        left: 925px;
+    }
+    43% {
+        top: 85px;
+        left: 1020px;
+    }
+    50% {
+        top: 190px;
+        left: 1020px;
+    }
+    60% {
+        top: 190px;
+        left: 925px;
+    }
+    90% {
+        top: 190px;
+        left: 755px;
+    }
 }
