@@ -9,6 +9,7 @@
     box-sizing: border-box;
     font-family: 'FuenteNavidad', sans-serif;
 }
+
 body > * {
     display: block;
 }
@@ -22,16 +23,19 @@ body > * {
     z-index: 10;
     transition: all 4s;
 }
+
 .telon2 {
     opacity: 0;
     transform: translate(700px);
 }
+
 .fondo {
     position: absolute;
     top: 80px;
     left: 80px;
     z-index: 1;
 }
+
 .calcetin {
     position: absolute;
     width: 19px;
@@ -39,7 +43,13 @@ body > * {
     top: 350px;
     left: 285px;
     z-index: 2;
-    transform: rotateZ(-40deg); 
+    transform: rotateZ(-40deg);
+    transition: all 4s;
+}
+
+.calcetin2 {
+    transform: rotateZ(0deg) scale(1.2);
+    opacity: 0;
 }
 
 .reno {
@@ -48,6 +58,12 @@ body > * {
     top: 180px;
     left: 300px;
     z-index: 3;
+    transition: all 4s;
+}
+
+.reno2 {
+    transform: scale(1.2);
+    opacity: 0;
 }
 
 .muneco {
@@ -57,14 +73,28 @@ body > * {
     left: 95px;
     transform: rotateZ(10deg);
     z-index: 4;
+    transition: all 4s;
 }
+
+.muneco2 {
+    transform: rotateZ(0deg) scale(1.2);
+    opacity: 0;
+}
+
 .copo {
     position: absolute;
     width: 45px;
     top: 80px;
     left: 545px;
     z-index: 5;
+    transition: all 4s;
 }
+
+.copo2 {
+    transform: scale(1.2);
+    opacity: 0;
+}
+
 .bolas {
     position: absolute;
     width: 50px;
@@ -72,21 +102,42 @@ body > * {
     left: 590px;
     transform: rotateZ(13deg);
     z-index: 6;
+    transition: all 4s;
 }
+
+.bolas2 {
+    transform: rotateZ(0deg) scale(1.2);
+    opacity: 0;
+}
+
 .galleta{
     position: absolute;
     width: 30px;
     top: 355px;
     left: 655px;
     z-index: 7;
+    transition: all 4s;
 }
+
+.galleta2 {
+    transform: scale(1.2);
+    opacity: 0;
+}
+
 .regalos {
     position: absolute;
     width: 75px;
     top: 465px;
     left: 640px;
     z-index: 8;
+    transition: all 4s;
 }
+
+.regalos2 {
+    transform: scale(1.2);
+    opacity: 0;
+}
+
 .baston {
     position: absolute;
     width: 25px;
@@ -94,6 +145,12 @@ body > * {
     left: 535px;
     transform: rotate(-35deg);
     z-index: 9;
+    transition: all 4s;
+}
+
+.baston2{
+    transform: rotate(0deg) scale(1.2);
+    opacity: 0;
 }
 
 /*aside*/
