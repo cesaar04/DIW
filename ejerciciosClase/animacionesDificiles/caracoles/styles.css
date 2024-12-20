@@ -1,15 +1,20 @@
-
-
-
+body {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
 
 .camino {
     position: relative;
     width: 80vw;
     height: 50px;
-    background-color: red;
+    /* background-color: green; */
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('img/cesped.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .h1 {
     margin: 2vh 0;
@@ -23,5 +28,24 @@
 }
 .camino:nth-of-type(3) {
     top: 300px;
+}
+
+.camino h2 {
+    opacity: 0;
+    transition: opacity 0.5 ease-in;
+}
+
+.bola {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    left: 0;
+    top: -5px;
+    transition: left 1s;
+}
+
+.btn {
+    padding: 1vw 2vh;
+    border-radius: 10px;
 }
 

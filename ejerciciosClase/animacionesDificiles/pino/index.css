@@ -1,0 +1,42 @@
+.pino {
+    position: relative;
+}
+
+.bola {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: blueviolet;
+    box-shadow: 0px 0px 40px blueviolet;
+    transition: all 0.5s ease-in;
+}
+
+.bola:nth-of-type(1){
+    top: 80px;
+    left: 390px;
+}
+
+.bola:nth-of-type(2){
+    top: 240px;
+    left: 250px;
+}
+
+.bola:nth-of-type(3){
+    top: 450px;
+    left: 575px;
+}
+
+.bola:nth-of-type(4){
+    top: 620px;
+    left: 250px;
+}
+
+.bola:nth-of-type(5){
+    top: 700px;
+    left: 670px;
+}
+.btn {
+    padding: 1vw 2vh;
+    border-radius: 10px;
+}  
