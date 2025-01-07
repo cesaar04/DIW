@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.contenedor {
+    position: relative;
+}
+
+.circuito {
+    position: absolute;
+}
+
+.car {
+    position: absolute;
+    top: 15px;
+    left: 110px;
+    width: 120px;
+    animation: carMov 2s infinite linear;
+    animation-play-state: paused;
+}
+
+.car:hover{
+    animation-play-state: running;
+}
+
+@keyframes carMov {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(340px);
+    }
+    40% {
+        transform: translate(340px, 180px) rotate(180deg);
+    }
+    60% {
+        
+    }
+    80% {
+
+    }
+    100% {
+
+    }
+}

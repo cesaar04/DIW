@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.contenedor {
+    background-image: url('media/fondo.jpg');
+    width: 1085px;
+    height: 600px;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.coche_cont {
+    position: absolute;
+    z-index: 2;
+    animation: coche 4s linear 1s forwards;
+}
+.coche {
+    width: 280px;
+    position: absolute;
+    height: auto;
+    top: 450px;
+}
+
+.rueda {
+    position: absolute;
+    width: 70px;
+    top: 535px;
+    left: 47px;
+    z-index: 4;
+    animation: ruedas 1s linear 1s forwards 4;
+}
+.rueda2 {
+    position: absolute;
+    width: 70px;
+    top: 535px;
+    left: 188px;
+    z-index: 5;
+    animation: ruedas 1s linear 1s forwards 4;
+}
+.arbol {
+    position: absolute;
+    z-index: 1;
+}
+
+.tronco {
+    position: absolute;
+    width: 520px;
+    top: 50px;
+    left: 520px;
+}
+.copa {
+    position: absolute;
+    width: 520px;
+    top: 50px;
+    left: 520px;
+    animation: arbol 1s linear 5s forwards;
+}
+
+.explosion {
+    position: absolute;
+    width: 120px;
+    top: 360px;
+    left: 640px;
+    animation: explosion 1.5s linear 5s backwards;
+    opacity: 0;
+}
+
+.fuego {
+    position: absolute;
+    width: 80px;
+    top: 435px;
+    left: 660px;
+    animation: explosion 2s linear 6s forwards;
+    opacity: 0;
+}
+
+@keyframes coche {
+    0% {
+        transform: translateX(0);
+    }
+
+    90% {
+        transform: translateX(calc(500px * 0.9)) rotateY(0deg);
+    }
+
+    100% {
+        transform: translateX(490px) rotateY(35deg);
+    }
+}
+
+@keyframes ruedas {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes arbol {
+    0% {
+
+    }
+    100% {
+        transform: rotate(-90deg) translate(-220px,-420px);
+    }
+}
+
+@keyframes explosion {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
