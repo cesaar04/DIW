@@ -1,3 +1,10 @@
+:root {
+    --xdche: 340px;
+    --xizqd: -30px;
+    --yarr: 0px;
+    --yabj: 180px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,9 +22,17 @@
     position: absolute;
     top: 15px;
     left: 110px;
-    width: 120px;
-    animation: carMov 2s infinite linear;
-    animation-play-state: paused;
+    width: 50px;
+    animation: carMov 10s linear;
+    /* animation-play-state: paused; */
+}
+.car2 {
+    position: absolute;
+    top: 15px;
+    left: 110px;
+    width: 50px;
+    animation: carMov 15s linear;
+    /* animation-play-state: paused; */
 }
 
 .car:hover{
@@ -29,18 +44,24 @@
         transform: translate(0, 0) rotate(0deg);  
     }
     20% {
-        transform: translate(340px, 0) rotate(0deg);  
+        transform: translate(var(--xdche), var(--yarr)) rotate(0deg);  
+    }
+    30% {
+        transform: translate(460px, calc( (var(--yabj) + var(--yarr))/2)) rotate(90deg);
     }
     40% {
-        transform: translate(340px, 180px) rotate(180deg);  
+        transform: translate(var(--xdche), var(--yabj)) rotate(180deg);  
     }
     60% {
-        transform: translate(0, 180px) rotate(180deg);  
+        transform: translate(var(--xizqd), var(--yabj)) rotate(180deg);  
+    }
+    70% {
+        transform: translate(-120px, calc((var(--yarr) + var(--yabj))/2)) rotate(270deg);
     }
     80% {
-        transform: translate(-60px, 0) rotate(360deg);  
+        transform: translate(var(--xizqd), var(--yarr)) rotate(360deg);  
     }
     100% {
-        transform: translate(360px, 0) rotate(360deg);  
+        transform: translate(340px, 0) rotate(360deg);
     }
 }
