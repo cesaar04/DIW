@@ -14,24 +14,93 @@
 
 .car {
     position: absolute;
-    top: 70px;
-    left: 275px;
-    width: 60px;
-    animation: carMov 10s linear;
+    top: 320px;
+    left: 330px;
+    width: 45px;
+    animation: carMov 15s linear 2;
     /* animation-play-state: paused; */
 }
 /* .car2 {
     position: absolute;
-    top: 15px;
-    left: 110px;
-    width: 50px;
-    animation: carMov 15s linear;
-    animation-play-state: paused;       
+    top: 320px;
+    left: 330px;
+    width: 48px;
+    animation: carMov 15s linear 1s 2;
+    /* animation-play-state: paused;*
+} */
+
+/*.car3 {
+    position: absolute;
+    top: 320px;
+    left: 330px;
+    width: 45px;
+    animation: carMov 15s linear 2s 2;
+    /* animation-play-state: paused;*
 } */
 
 
-@keyframes carMov {
-    /*HACER EL PUTO CIRCUITO FACIL*/    
-    
-}
 
+@keyframes carMov {
+    0% {
+        transform: translate(0px,0px);
+    }
+    4% {
+        transform: translate(-100px, 0) ;
+    }
+    10% {
+        transform: translate(-180px,80px);
+    }
+    14%{
+        transform: translate(-140px, 160px);
+    }
+    22% {
+        transform: translate(225px, 160px);
+    }
+    
+    26% {
+        transform: translate(270px, 240px);
+    }
+     
+    30% {
+        transform: translate(220px, 280px);
+    }
+     
+    38% {
+        transform: translate(-200px, 280px);
+    }
+     
+    44% {
+        transform: translate(-310px,180px);
+    }
+    48% {
+        transform: translate(-310px,-60px);
+    }
+    54% {
+        transform: translate(-270px,-164px);
+    }
+    62% {
+        transform: translate(440px, -164px);
+    }
+    66% {
+        transform: translate(550px, -100px);
+    }
+    72% {
+        transform: translate(550px, 200px);
+    }
+    76% {
+        transform: translate(480px, 300px);
+    }
+    80% {
+        transform: translate(400px, 240px);
+    }
+    85% {
+        transform: translate(340px, 30px);
+    }
+    89% {
+        transform: translate(290px, 15px);
+    }
+    100% {
+        transform: translate(-4px,15px);
+    }
+
+}
