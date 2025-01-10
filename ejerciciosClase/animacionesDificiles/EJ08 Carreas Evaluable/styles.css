@@ -17,26 +17,81 @@
     top: 320px;
     left: 330px;
     width: 45px;
-    animation: carMov 15s linear 2;
+    animation: carMov 15s linear 4s 2;
     /* animation-play-state: paused; */
 }
-/* .car2 {
+.car2 {
     position: absolute;
     top: 320px;
     left: 330px;
     width: 48px;
-    animation: carMov 15s linear 1s 2;
-    /* animation-play-state: paused;*
-} */
+    animation: carMov 18s linear 4s 2;
+    /* animation-play-state: paused;*/
+}
 
-/*.car3 {
+ .car3 {
     position: absolute;
     top: 320px;
     left: 330px;
     width: 45px;
-    animation: carMov 15s linear 2s 2;
-    /* animation-play-state: paused;*
-} */
+    animation: carMov 21s linear 4s 2;
+    /* animation-play-state: paused;*/
+}
+
+/*BANDERA */
+.bandera {
+    position: absolute;
+    width: 75px;
+    top: 275px;
+    left: 300px;
+    opacity: 0;
+    animation: bandera 4s 34s;
+}
+
+/*SEMAFORO*/
+.semaforo {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    z-index: 10;
+}
+.rojo {
+    position: absolute;
+    z-index: inherit;
+    width: 29px;
+    height: 29px;
+    border-radius: 15px;
+    top: 260px;
+    left: 328px;
+    background-color: red;
+    animation: semaforo 1s linear 1s backwards;
+    opacity: 0  ;
+}
+.amarillo {
+    position: absolute;
+    z-index: inherit;
+    width: 29px;
+    height: 29px;
+    border-radius: 15px;
+    top: 260px;
+    left: 299px;
+    background-color: yellow;
+    animation: semaforo 1s linear 2s backwards;
+    opacity: 0  ;
+}
+
+.verde {
+    position: absolute;
+    z-index: inherit;
+    width: 29px;
+    height: 29px;
+    border-radius: 15px;
+    top: 260px;
+    left: 268px;
+    background-color: green;
+    animation: semaforo 1s linear 3s backwards;
+    opacity: 0  ;
+}
 
 
 
@@ -45,62 +100,75 @@
         transform: translate(0px,0px);
     }
     4% {
-        transform: translate(-100px, 0) ;
+        transform: translate(-100px, 0);
     }
     10% {
-        transform: translate(-180px,80px);
+        transform: translate(-180px,60px) rotate(-120deg);
     }
     14%{
-        transform: translate(-140px, 160px);
+        transform: translate(-170px, 160px) rotate(-180deg);
     }
     22% {
-        transform: translate(225px, 160px);
+        transform: translate(225px, 160px) rotate(-180deg);
     }
-    
     26% {
-        transform: translate(270px, 240px);
+        transform: translate(270px, 240px) rotate(-55deg);
     }
-     
     30% {
-        transform: translate(220px, 280px);
+        transform: translate(220px, 280px) rotate(2deg);
     }
-     
     38% {
         transform: translate(-200px, 280px);
     }
-     
     44% {
-        transform: translate(-310px,180px);
+        transform: translate(-300px,200px) rotate(90deg);
     }
     48% {
-        transform: translate(-310px,-60px);
+        transform: translate(-310px,-60px) rotate(90deg);
     }
     54% {
-        transform: translate(-270px,-164px);
+        transform: translate(-270px,-164px) rotate(180deg);
     }
     62% {
-        transform: translate(440px, -164px);
+        transform: translate(440px, -164px) rotate(180deg);
     }
     66% {
-        transform: translate(550px, -100px);
+        transform: translate(550px, -100px) rotate(270deg);
     }
     72% {
-        transform: translate(550px, 200px);
+        transform: translate(550px, 200px) rotate(270deg);
     }
     76% {
-        transform: translate(480px, 300px);
+        transform: translate(480px, 300px) rotate(360deg);
     }
     80% {
-        transform: translate(400px, 240px);
+        transform: translate(360px, 240px) rotate(450deg);
     }
     85% {
-        transform: translate(340px, 30px);
+        transform: translate(340px, 30px) rotate(450deg);
     }
     89% {
-        transform: translate(290px, 15px);
+        transform: translate(290px, 4px) rotate(360deg);
     }
     100% {
-        transform: translate(-4px,15px);
-    }
+        transform: translate(0px, 0px) rotate(360deg);
+    } 
+}
 
+
+@keyframes bandera {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes semaforo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
