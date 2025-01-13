@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 512px;
+    height: 800px;
+}
+
+.contenedor img {
+    animation: slider 10s ease-in-out infinite;
+}
+
+.tve {
+    width: 512px;
+    height: 200px;
+}
+.antena3 {
+    width: 512px;
+    height: 200px;
+}
+.cuatro {
+    width: 512px;
+    height: 200px;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(0%);
+    }
+    30% {
+        transform: translateX(0%);
+    }
+    33% {
+        transform: translateX(-100%);
+    }
+    63% {
+        transform: translateX(-100%);
+    }
+    66% {
+        transform: translateX(-200%);
+    }
+    99% {
+        transform: translateX(-200%);
+    }
+}
+
