@@ -1,0 +1,44 @@
+/* Aseguramos que el body ocupe toda la pantalla */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Estilos para los rectángulos */
+  .rectangle {
+    flex: 1 0 50%; /* Cada rectángulo ocupa el 50% de la pantalla (en el eje horizontal) */
+    height: 50%; /* Cada rectángulo ocupa el 50% de la pantalla (en el eje vertical) */
+    display: flex;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+  }
+  /* Cambiar el cursor cuando pasamos sobre los rectángulos */
+  .rectangle:hover {
+    cursor: pointer; /* Cambia a la mano */
+    opacity: 0.9; /* Hace el rectángulo un poco más transparente al pasar el cursor */
+  }
+
+  /* Colores para cada rectángulo */
+  .rectangle:nth-child(1) {
+    background-color: #F8A1A1; /* Rojo pastel */
+  }
+  .rectangle:nth-child(2) {
+    background-color: #A8D8E9; /* Azul pastel */
+  }
+  .rectangle:nth-child(3) {
+    background-color: #F9E4A6; /* Amarillo pastel */
+  }
+  .rectangle:nth-child(4) {
+    background-color: #A7D8A7; /* Verde pastel */
+  }
+  
+  
+  
+  
