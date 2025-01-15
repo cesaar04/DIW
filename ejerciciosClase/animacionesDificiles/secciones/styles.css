@@ -1,44 +1,101 @@
-/* Aseguramos que el body ocupe toda la pantalla */
-body, html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-  }
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.774);
+}
 
-  /* Estilos para los rectángulos */
-  .rectangle {
-    flex: 1 0 50%; /* Cada rectángulo ocupa el 50% de la pantalla (en el eje horizontal) */
-    height: 50%; /* Cada rectángulo ocupa el 50% de la pantalla (en el eje vertical) */
-    display: flex;
-    justify-content: center; /* Centra el texto horizontalmente */
-    align-items: center; /* Centra el texto verticalmente */
-    font-size: 2em;
-    color: white;
-    font-weight: bold;
-  }
-  /* Cambiar el cursor cuando pasamos sobre los rectángulos */
-  .rectangle:hover {
-    cursor: pointer; /* Cambia a la mano */
-    opacity: 0.9; /* Hace el rectángulo un poco más transparente al pasar el cursor */
-  }
+.demo-box {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
 
-  /* Colores para cada rectángulo */
-  .rectangle:nth-child(1) {
-    background-color: #F8A1A1; /* Rojo pastel */
-  }
-  .rectangle:nth-child(2) {
-    background-color: #A8D8E9; /* Azul pastel */
-  }
-  .rectangle:nth-child(3) {
-    background-color: #F9E4A6; /* Amarillo pastel */
-  }
-  .rectangle:nth-child(4) {
-    background-color: #A7D8A7; /* Verde pastel */
-  }
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  transition: all 0.5s ease-in-out;
   
-  
-  
-  
+}
+
+section:nth-child(1) {
+  background-color: #F8A1A1;
+  top: 0;
+  left: 0;
+}
+
+section:nth-child(2) {
+  background-color: #A8D8E9;
+  top: 0;
+  left: 50%;
+}
+
+section:nth-child(3) {
+  background-color: #F9E4A6;
+  top: 50%;
+  left: 0;
+}
+
+section:nth-child(4) {
+  background-color: #A7D8A7;
+  top: 50%;
+  left: 50%;
+}
+
+.section.is-expanded {
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  cursor: auto !important;
+}
+
+.section.is-expanded:nth-child(1) {
+  transform: translate(0, 0);
+}
+
+.section.is-expanded:nth-child(2) {
+  transform: translate(-50%, 0);
+}
+
+.section.is-expanded:nth-child(3) {
+  transform: translate(0, -50%);
+}
+
+.section.is-expanded:nth-child(4) {
+  transform: translate(-50%, -50%);
+}
+
+.cerrar-seccion {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: none;
+  border-radius: 100%;
+  display: flex;
+  font-size: 18px;
+  opacity: 0;
+  cursor: pointer;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+.section.is-expanded .cerrar-seccion {
+  visibility: visible;
+  opacity: 1;
+}
+
+.section.not-expanded  {
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
