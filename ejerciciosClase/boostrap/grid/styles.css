@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.col {
+    background-color: grey;
+    border: 2px solid black;
+    height: 200px;
+}
+.col-4 {
+    background-color: grey;
+    border: 2px solid black;
+    height: 200px;
+}
+.col-8 {
+    background-color: grey;
+    border: 2px solid black;
+    height: 200px;
+}
+.col-md-6 {
+    background-color: grey;
+    border: 2px solid black;
+    height: 200px;
+}
