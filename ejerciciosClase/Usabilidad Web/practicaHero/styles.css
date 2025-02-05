@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto {
+    width: 420px;
+    height: 220px;
+    background-color: aqua;
+}
+.noTexto {
+    width: 200px;
+    height: auto;
+    background-color: rgb(255, 0, 0);
+}
