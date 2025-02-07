@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,56 @@
     <link rel="stylesheet" href="styles.css">
     <title>Hero Imagen con transiciones</title>
 </head>
+
 <body>
-    <div class="contenedor">
-        <div class="texto">
-            <h1>Titulo 1</h1>
-            <p>Informacion acerca de lo que quiero</p>
+    <div class="padre">
+        <div class="contenedor">
+            <div class="tarjeta" id="tarjeta1">
+                <div class="texto">
+                    <h1>Titulo 1</h1>
+                    <p>Informacion acerca de lo que quiero.Informacion acerca de lo que quiero
+                        Informacion acerca de lo que quiero.Informacion acerca de lo que quiero
+                        Informacion acerca de lo que quiero.Informacion acerca de lo que quiero
+                        Informacion acerca de lo que quiero.Informacion acerca de lo que quiero
+                        Informacion acerca de lo que quiero.Informacion acerca de lo que quiero
+                        Informacion acerca de lo que quieroInformacion acerca de lo que quiero
+                        Informacion acerca de lo que quiero.
+                    </p>
+                </div>
+                <div class="imagen">
+                    <img src="media/images.png" alt="">
+                </div>
+            </div>
+            <div class="tarjeta" id="tarjeta2">
+                <div class="texto">
+                    <h1>Titulo 2</h1>
+                    <p>Hola soy el apartado 2ola soy el apartado 2ola soy el apartado 2ola soy el apartado 2ola soy el
+                        apartado 2ola soy el apartado 2ola soy el apartado 2ola soy el apartado 2ola soy el apartado 2
+                    </p>
+                </div>
+                <div class="imagen">
+                    <img src="media/images.png" alt="">
+                </div>
+            </div>
+            <div class="tarjeta" id="tarjeta3">
+                <div class="texto">
+                    <h1>Titulo 3</h1>
+                    <p>Hola soy el apartado 3
+                    </p>
+                </div>
+                <div class="imagen">
+                    <img src="media/images.png" alt="">
+                </div>
+            </div>
+
+            <div class="botones">
+                <button type="button" onclick="mostrarTarjeta(1)"></button>
+                <button type="button" onclick="mostrarTarjeta(2)"></button>
+                <button type="button" onclick="mostrarTarjeta(3)"></button>
+            </div>
         </div>
-        <div class="noTexto"></div>
     </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
