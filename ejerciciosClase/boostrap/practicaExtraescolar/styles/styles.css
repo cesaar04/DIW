@@ -42,18 +42,29 @@ html {
     background-color: #555;
     color: white;
 }
+
 .list-group-item:nth-child(odd) {
     background-color: #d8d8d8;
-  }
-  
-  .list-group-item:nth-child(even) {
+}
+
+.list-group-item:nth-child(even) {
     background-color: #ffffff;
-  }
-  
-  /* Efecto hover */
-  .list-group-item:hover {
+}
+    
+.list-group-item:hover {
     background-color: #a3a3a3;
     color: black;
     cursor: pointer;
+}
+
+.carousel-img {
+    height: 800px;
+    object-fit: cover;
   }
-  
+
+
+#carouselExampleFade {
+    max-width: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
