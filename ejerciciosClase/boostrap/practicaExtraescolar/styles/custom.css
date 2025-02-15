@@ -114,8 +114,8 @@ h2 {
     margin-bottom: 30px;
 }
 .form-container label {
-    width: 280px; /* Cambia el valor para el ancho de la etiqueta */
-    padding: 10px; /* Agrega más espacio alrededor del texto */
+    width: 280px;
+    padding: 10px;
   }
 
 .form-control {
