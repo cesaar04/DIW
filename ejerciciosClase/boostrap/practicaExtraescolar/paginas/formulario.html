@@ -48,65 +48,57 @@
   </nav>
 
   <div class="container form-container">
-    <h2 class="text-center text-secondary fw-bold">Formulario de Reserva</h2>
+    <h2 class="text-center text-secondary fw-bold mb-4">Formulario de Reserva</h2>
     <form>
-      <div class="row mb-3 align-items-center justify-content-center">
-        <label for="nombre" class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-form-label large-label">Nombre <i class="fa-solid fa-user-large"></i></label>
-        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-10">
-          <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre">
+        <!-- Fila 1: Nombre, Teléfono y Correo -->
+        <div class="row mb-3 align-items-center justify-content-between">
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+                <label for="nombre" class="col-form-label">Nombre <i class="fa-solid fa-user-large"></i></label>
+                <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre">
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+                <label for="telefono" class="col-form-label">Teléfono <i class="fa-solid fa-phone"></i></label>
+                <input type="tel" class="form-control" id="telefono" placeholder="Introduce teléfono">
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+                <label for="email" class="col-form-label">Correo Electrónico <i class="fa-solid fa-envelope"></i></label>
+                <input type="email" class="form-control" id="email" placeholder="Introduce tu correo electrónico">
+            </div>
         </div>
-      </div>
-  
-      <div class="row mb-3 align-items-center justify-content-center">
-        <label for="telefono" class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-form-label">Teléfono <i class="fa-solid fa-phone"></i></label>
-        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-10">
-          <input type="tel" class="form-control" id="telefono" placeholder="Introduce teléfono">
+
+        <!-- Fila 2: Fecha, Hora y Número de Personas -->
+        <div class="row mb-3 align-items-center justify-content-between">
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+                <label for="fecha" class="col-form-label">Fecha de Reserva <i class="fa-solid fa-calendar-days"></i></label>
+                <input type="date" class="form-control" id="fecha">
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+                <label for="hora" class="col-form-label">Hora <i class="fa-regular fa-clock"></i></label>
+                <input type="time" class="form-control" id="hora">
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12 mb-3">
+                <label for="personas" class="col-form-label">Número de Personas <i class="fa-solid fa-person"></i></label>
+                <input type="number" class="form-control" id="personas" placeholder="Número de personas">
+            </div>
         </div>
-      </div>
-  
-      <div class="row mb-3 align-items-center justify-content-center">
-        <label for="email" class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-form-label">Correo Electrónico <i class="fa-solid fa-envelope"></i></label>
-        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-10">
-          <input type="email" class="form-control" id="email" placeholder="Introduce tu correo electrónico">
+
+        <!-- Fila 3: Comentarios -->
+        <div class="row mb-3">
+            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-10 mb-3">
+                <label for="comentarios" class="col-form-label">Comentarios <i class="fa-solid fa-comment"></i></label>
+                <textarea class="form-control" id="comentarios" rows="3" placeholder="Escribe tus comentarios o peticiones"></textarea>
+            </div>
         </div>
-      </div>
-  
-      <div class="row mb-3 align-items-center justify-content-center">
-        <label for="fecha" class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-form-label">Fecha de Reserva <i class="fa-solid fa-calendar-days"></i></label>
-        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-10">
-          <input type="date" class="form-control" id="fecha">
+
+        <!-- Fila 4: Botón -->
+        <div class="row mb-3 align-items-center justify-content-center">
+            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-10 text-center">
+                <button type="submit" class="btn btn-primary w-100">Reservar</button>
+            </div>
         </div>
-      </div>
-  
-      <div class="row mb-3 align-items-center justify-content-center">
-        <label for="hora" class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-form-label">Hora <i class="fa-regular fa-clock"></i></label>
-        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-10">
-          <input type="time" class="form-control" id="hora">
-        </div>
-      </div>
-  
-      <div class="row mb-3 align-items-center justify-content-center">
-        <label for="personas" class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-form-label">Número de Personas <i class="fa-solid fa-person"></i></label>
-        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-10">
-          <input type="number" class="form-control" id="personas" placeholder="Número de personas">
-        </div>
-      </div>
-  
-      <div class="row mb-3 align-items-center justify-content-center">
-        <label for="comentarios" class="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-form-label">Comentarios <i class="fa-solid fa-comment"></i></label>
-        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-10">
-          <textarea class="form-control" id="comentarios" rows="3" placeholder="Escribe tus comentarios o peticiones"></textarea>
-        </div>
-      </div>
-  
-      <div class="row mb-3 align-items-center justify-content-center">
-        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-8 col-10 text-center">
-          <button type="submit" class="btn btn-primary w-100">Reservar</button>
-        </div>
-      </div>
     </form>
-  </div>
-  
+</div>
+ 
   
 
   <!-- Footer -->
